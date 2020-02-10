@@ -15,5 +15,5 @@ custom:
   safeguards:
     location: ./policies
     policies:
-      - require-env-vars:
+      - required-env-vars:
           CI: true
