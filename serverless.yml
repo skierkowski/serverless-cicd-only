@@ -16,4 +16,5 @@ custom:
     location: ./policies
     policies:
       - required-env-vars:
-          SERVERLESS_CICD: "true"
+          SERVERLESS_CICD: true
+
