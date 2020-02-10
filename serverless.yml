@@ -1,0 +1,19 @@
+service: cicd-only
+app: cicd-only
+org: skierkowski
+
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  hello:
+    handler: handler.hello
+
+custom:
+  safeguards:
+    location: ./policies
+    policies:
+      - require-env-vars:
+          SERVERLESS_CICD: "true"
