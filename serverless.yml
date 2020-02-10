@@ -15,5 +15,6 @@ custom:
   safeguards:
     location: ./policies
     policies:
-      - require-env-vars:
+      - required-env-vars:
           SERVERLESS_CICD: true
+
